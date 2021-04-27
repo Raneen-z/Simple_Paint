@@ -139,7 +139,8 @@ namespace SimplePaint
                 this.isClicked = !this.isClicked; //make it false and wait for new point entry
                 this.currentShape.location2 = this.location2;
             }
-            this.currentShape.pen = this.pen;
+            
+            this.currentShape.pen =(Pen) this.pen.Clone();
             this.shapes.Add(this.currentShape);
             Refresh();
         }
