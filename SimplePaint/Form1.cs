@@ -167,7 +167,7 @@ namespace SimplePaint
                 switch (shape.shapeName)
                 {
                     case "line":
-                        //
+                        e.Graphics.DrawLine(shape.pen, shape.location1, shape.location2);
                         break;
                     case "rectangle":
                         e.Graphics.DrawRectangle(shape.pen, GetRect(shape.location1,shape.location2));
